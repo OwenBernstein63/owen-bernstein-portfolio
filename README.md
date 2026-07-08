@@ -7,7 +7,7 @@ A static, tech-inspired personal portfolio for Owen Bernstein.
 - `index.html` — site structure and content
 - `styles.css` — full responsive styling
 - `script.js` — navigation, animations, copy email, typing effect
-- `Owen_Bernstein_Resume.pdf` — resume linked from the site
+- `July_Resume_2026` — resume linked from the site
 
 ## How to preview locally
 
