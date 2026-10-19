@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Owen Bernstein — Temple University Honors Electrical & Computer Engineering student. Circuit design, hardware validation, embedded systems, and electromechanical troubleshooting portfolio." />
+  <title>Owen Bernstein | Electrical & Computer Engineering</title>
+  <!-- Keeps the existing portfolio design without requiring changes to styles.css. -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Minor additions for expanded resume content. */
+    .nav-links { gap: 1.1rem; }
+    .project-card { display:flex; flex-direction:column; }
+    .project-card .tag-row { margin-top:auto; padding-top:1.1rem; }
+    .project-card p { margin-bottom:.5rem; }
+    .project-card .project-date {color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem}
+    .card-grid {align-items:stretch}
+    .detail-list {margin:.5rem 0 0; padding-left:1.15rem; color:var(--muted);line-height:1.65}
+    .detail-list li+li {margin-top:.45rem}
+    .coursework {padding:1.2rem 1.5rem;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035);margin-top:1.25rem;color:var(--muted);line-height:1.7}
+    .coursework strong {color:var(--text)}
+    .skill-group {margin:1.5rem 0 .5rem;color:var(--accent);font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
+    .skills .skill-cloud {margin-top:.55rem}
+    .contact-panel a {overflow-wrap:anywhere}
+    .section-heading h2 {max-width:900px}
+    .timeline-item h3 {line-height:1.35}
+    .muted-note {font-size:.93rem}
+    @media(min-width:861px){.card-grid .project-card:first-child{border-color:rgba(101,247,255,.55)}}
+    @media(max-width:860px){.nav-links{gap:1rem}}
+    @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Owen Bernstein home"><span class="brand-mark">OB</span><span class="brand-text">Owen Bernstein</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#leadership">Leadership</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Electrical & Computer Engineering · Temple University</p>
+        <h1>Building, testing, and troubleshooting electrical hardware.</h1>
+        <p class="hero-copy">I’m Owen Bernstein, a Temple University Honors Electrical & Computer Engineering student interested in automotive electronics, circuit design, embedded systems, and hardware validation. I enjoy the hands-on work of turning an electrical design into a system that performs reliably.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore Projects</a>
+          <a class="button secondary" href="Owen_Bernstein_Stellantis_EHE_Intern_2027.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+          <a class="button ghost" href="mailto:owenbernstein63@gmail.com">Contact Me</a>
+        </div>
+      </div>
+      <aside class="terminal-card reveal" aria-label="Profile highlights">
+        <div class="terminal-top"><span></span><span></span><span></span><p>owen.profile</p></div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> education</p>
+          <p class="line">B.S. ECE · Electrical Engineering concentration</p>
+          <p class="line">Temple Honors · Dean’s List (2 semesters)</p>
+          <p><span class="prompt">$</span> focus</p>
+          <p class="line accent" id="type-line">hardware testing + validation</p>
+        </div>
+      </aside>
+    </section>
+    <section class="metrics section-shell reveal" aria-label="Quick stats">
+      <article><span>3.90</span><p>GPA / 4.00</p></article>
+      <article><span>26</span><p>Bowling lanes serviced</p></article>
+      <article><span>2029</span><p>Expected Graduation</p></article>
+      <article><span>2×</span><p>Dean’s List</p></article>
+    </section>
+    <section id="about" class="about section-shell split-section">
+      <div class="section-heading reveal"><p class="eyebrow">About</p><h2>Engineering fundamentals backed by real troubleshooting.</h2></div>
+      <div class="about-grid reveal">
+        <p>I’m pursuing a B.S. in Electrical & Computer Engineering with an Electrical Engineering concentration at Temple University (expected May 2029). My coursework and projects have introduced me to circuit analysis, simulation, programming, sensors, experimental measurements, and validating hardware against a design.</p>
+        <p>Working as a bowling machine technician has taught me how to isolate faults in motors, wiring, sensors, and automated equipment while working safely in a busy operating environment. I’m especially interested in applying that approach to automotive electrical architecture, electronic hardware, and validation.</p>
+      </div>
+      <div class="coursework reveal"><strong>Relevant coursework:</strong> Circuits &amp; Electronics I · Engineering Computation I · Engineering Analysis &amp; Applications<br /><strong>Education:</strong> Temple University Honors · College of Engineering Dean’s List, first two semesters</div>
+    </section>
+    <section id="projects" class="section-shell">
+      <div class="section-heading reveal"><p class="eyebrow">Engineering Projects</p><h2>From circuit simulation to physical hardware testing.</h2></div>
+      <div class="card-grid">
+        <article class="project-card reveal">
+          <div class="card-icon">⚡</div><p class="project-date">September 2026 · Circuit design &amp; validation</p><h3>Three-Level LED Voltage Indicator</h3>
+          <p>Designed, simulated, and assembled a DC voltage-indicator circuit with resistor, diode, and LED components. Used KVL and circuit analysis to select components, then compared physical measurements with NI Multisim simulations using a digital multimeter and DC power supply.</p>
+          <p class="muted-note">Targeted visual indication across increasing input-voltage ranges and approximately 10 mA LED current at specified operating points.</p>
+          <div class="tag-row"><span>NI Multisim</span><span>KVL</span><span>Hardware Validation</span><span>DMM</span><span>DC Power Supply</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="card-icon">μ</div><p class="project-date">December 2025 · Embedded hardware</p><h3>BBC Micro:bit Incubator System</h3>
+          <p>Worked in a four-person team to build a temperature-monitoring and control prototype using a BBC micro:bit, sensor inputs, and control logic. Helped develop test procedures and a user guide, evaluate functional behavior, and refine the design based on testing feedback.</p>
+          <div class="tag-row"><span>Micro:bit</span><span>Sensors</span><span>Control Logic</span><span>Functional Testing</span><span>Team Design</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="card-icon">↗</div><p class="project-date">April 2026 · Engineering computation</p><h3>Wind Turbine Efficiency Calculator</h3>
+          <p>Collaborated with a four-person team on Python and Excel models using hourly weather data to estimate turbine power, energy production, and performance. Compared site conditions and energy-loss assumptions and communicated results to support engineering decisions.</p>
+          <div class="tag-row"><span>Python</span><span>Excel</span><span>Data Analysis</span><span>System Modeling</span></div>
+        </article>
+      </div>
+    </section>
+    <section id="experience" class="section-shell split-section">
+      <div class="section-heading reveal"><p class="eyebrow">Experience</p><h2>Practical fault isolation, communication, and leadership.</h2></div>
+      <div class="timeline reveal">
+        <article class="timeline-item"><span class="timeline-dot"></span><div><p class="date">Feb 2026 — Present · Spare Time Inc. / South Bowl, Philadelphia</p><h3>Bowling Machine Technician</h3><ul class="detail-list"><li>Diagnose and repair motors, wiring, sensors, and automated electromechanical equipment across 26 bowling lanes.</li><li>Follow electrical safety procedures, isolate electrical and mechanical faults, conduct preventive maintenance, and verify function after repairs.</li></ul></div></article>
+        <article class="timeline-item"><span class="timeline-dot"></span><div><p class="date">Aug 2026 — Present · Temple University</p><h3>STEM Tutor</h3><ul class="detail-list"><li>Guide students through Calculus II, physics, and quantitative problem solving using clear, step-by-step explanations.</li><li>Adapt communication to different learning styles and manage multiple tutoring appointments.</li></ul></div></article>
+        <article class="timeline-item"><span class="timeline-dot"></span><div><p class="date">July 2026 — Present · Home Team Tavern, Mt. Ephraim, NJ</p><h3>Server &amp; Floor Manager</h3><p>Coordinate floor operations and staff during busy shifts, resolve customer issues, and keep teams working together efficiently.</p></div></article>
+        <article class="timeline-item"><span class="timeline-dot"></span><div><p class="date">June 2023 — Present · Spare Time Inc. / South Bowl, Philadelphia</p><h3>Bar-Back</h3><p>Support high-volume service through preparation, organization, quick problem-solving, and coordination with coworkers.</p></div></article>
+      </div>
+    </section>
+    <section id="leadership" class="section-shell split-section">
+      <div class="section-heading reveal"><p class="eyebrow">Leadership &amp; Involvement</p><h2>Learning by building with others.</h2></div>
+      <div class="timeline reveal"><article class="timeline-item"><span class="timeline-dot"></span><div><p class="date">July 2026 — Present · Temple University</p><h3>IEEE · Power &amp; Energy Society (PES)</h3><p>Participate in workshops involving electrical systems, transformer concepts, soldering, hardware assembly, and teamwork. Combine classroom knowledge with practical exposure to engineering tools and methods.</p></div></article></div>
+    </section>
+    <section id="skills" class="skills section-shell">
+      <div class="section-heading reveal"><p class="eyebrow">Technical Skills</p><h2>Tools and concepts I use to design, test, and troubleshoot.</h2></div>
+      <h3 class="skill-group">Electrical &amp; Hardware</h3><div class="skill-cloud reveal"><span>Circuit Design &amp; Analysis</span><span>KCL / KVL</span><span>AC / DC Circuits</span><span>Schematic Interpretation</span><span>Motors &amp; Wiring</span><span>Sensors</span><span>Fault Isolation</span><span>Embedded Systems</span></div>
+      <h3 class="skill-group">Testing &amp; Validation</h3><div class="skill-cloud reveal"><span>Hardware Testing</span><span>Functional Testing</span><span>NI Multisim</span><span>Digital Multimeter</span><span>Oscilloscope</span><span>DC Power Supply</span><span>Circuit Simulation</span><span>Test Procedures</span></div>
+      <h3 class="skill-group">Software &amp; Communication</h3><div class="skill-cloud reveal"><span>C++</span><span>Python</span><span>MATLAB</span><span>Microsoft Excel</span><span>Microsoft Office</span><span>Data Analysis</span><span>Technical Documentation</span><span>Team Collaboration</span><span>Technical Communication</span></div>
+    </section>
+    <section id="contact" class="contact section-shell reveal">
+      <p class="eyebrow">Contact</p><h2>Let’s connect.</h2>
+      <p>I’m interested in opportunities involving electrical/electronic hardware, automotive technology, circuit validation, embedded systems, and hands-on troubleshooting.</p>
+      <div class="contact-panel"><a href="mailto:owenbernstein63@gmail.com">owenbernstein63@gmail.com</a><a href="https://www.linkedin.com/in/owenbernstein" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/OwenBernstein63" target="_blank" rel="noopener">GitHub</a><button id="copy-email" type="button">Copy Email</button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© <span id="year">2026</span> Owen Bernstein · Electrical &amp; Computer Engineering</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
